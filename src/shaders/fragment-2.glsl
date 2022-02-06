@@ -239,37 +239,37 @@ void main(){
    // uvRipple(uv, 3.);
    // coswarp2(uv, .5);
 
-     // uv = modPolar(uv -.5, 8. + uv.x);
+     uv = modPolar(uv -.5, 8. + uv.x);
       // uv = rotateTilePattern(uv);
        coswarp2(uv, .5);
    vec3 color = vec3(uv.x, uv.y, 1.);
      coswarp(color, 3.);
 
-    vec2 uv2 = tile(uv, 2. );
-       uv2 = rotateUV(uv2, vec2(.5), PI * vTime * .05);
-
-    uv2 = rotateTilePattern(uv2 );
-    vec2 uv3 = vec2(uv.x, uv2.y);
+     uv = tile(uv, 12. );
+    //    uv2 = rotateUV(uv2, vec2(.5), PI * vTime * .05);
+    //
+    // uv2 = rotateTilePattern(uv2 );
+    // vec2 uv3 = vec2(uv.x, uv2.y);
 
 
      //
      // uv.y += color.r;
      //  uv.x += color.g;
 
-     float circle2 = step(distance(uv, vec2(.5)), color.b );
+     // float circle2 = step(distance(uv, vec2(.5)), color.b );
+     //
+     // vec3 color2 = vec3(uv2.y, uv.x, 1.);
+     //   coswarp(color2, 3.);
+     //
+     // float circle3 = step(distance(uv, vec2(.5)), color2.g );
+     //
+     // vec3 color3 = vec3(1., uv2.y, uv.x);
+     //   coswarp(color3, 3.);
+     //
+     // float circle4 = step(distance(uv, vec2(.5)), color3.r );
 
-     vec3 color2 = vec3(uv2.y, uv.x, 1.);
-       coswarp(color2, 3.);
 
-     float circle3 = step(distance(uv, vec2(.5)), color2.g );
-
-     vec3 color3 = vec3(1., uv2.y, uv.x);
-       coswarp(color3, 3.);
-
-     float circle4 = step(distance(uv, vec2(.5)), color3.r );
-
-
-     float circle5 = stroke(polySDF(vUv, 15. * uValueC), uValueA,uValueB);
+     float circle5 = stroke(polySDF(uv, 15. * uValueC), uValueA,uValueB);
 
 
 

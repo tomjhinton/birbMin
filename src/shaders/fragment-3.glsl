@@ -231,8 +231,8 @@ void main(){
    // uvRipple(uv, 3.);
    // coswarp2(uv, .5);
 
-     // uv = modPolar(uv -.5, 8. + uv.x);
-      // uv = rotateTilePattern(uv);
+     uv = modPolar(uv -.5, 80. * uValueA);
+      uv = rotateTilePattern(uv);
        coswarp2(uv, .5);
    vec3 color = vec3(uv.x, uv.y, 1.);
      coswarp(color, 3.);
@@ -261,7 +261,7 @@ void main(){
      float circle4 = step(distance(uv, vec2(.5)), color3.r );
 
 
-     float circle5 = stroke(flowerSDF(vUv, 15. * uValueC), uValueA,uValueB);
+     float circle5 = stroke(flowerSDF(uv, 15. * uValueC), uValueA,uValueB);
 
 
 

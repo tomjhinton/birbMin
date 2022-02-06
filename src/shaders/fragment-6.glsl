@@ -261,9 +261,9 @@ void main(){
      float circle4 = step(distance(uv, vec2(.5)), color3.r );
 
 
-     float shape = stroke(flowerSDF(vUv - .3, 15. * uValueC), uValueA,uValueB);
+     float shape = stroke(flowerSDF(uv2 - .1, 15. * uValueC), uValueA,uValueB);
 
-      float shape2 = stroke(flowerSDF(vUv +.3, 15. * uValueA), uValueB,uValueD);
+      float shape2 = stroke(flowerSDF(vUv +.1, 15. * uValueA), uValueB,uValueD);
 
       color = color = bridge(vec3(shape), shape2, .4,.075);
 
