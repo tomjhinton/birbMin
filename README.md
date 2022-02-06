@@ -25,5 +25,5 @@ For @sableRaph's weekly Creative Coding Challenge. The Challenge topic was 'mini
 - [Metal font is Art Dystopia 2](https://www.dafont.com/artdystopia-ii.font)
 - There's a thing on the [Tone.js website](https://tonejs.github.io/Midi/) for converting midi to JSON.
 - Oh, the other font is [Basement](https://grotesque.basement.studio/) which I keep using and don't think I've linked before.
-- Oh part 2.0, the font that flashes briefly on the loading screen is [ferrite- core](https://github.com/froyotam/ferrite-core)
+- Oh part 2.0, the font that flashes briefly on the loading screen is [ferrite-core](https://github.com/froyotam/ferrite-core)
 - I like fonts.
